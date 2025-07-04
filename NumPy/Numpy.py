@@ -28,9 +28,26 @@ m2=np.array([[3,5],
 mul=np.dot(m1,m2)
 print("--------------------------------")
 print(mul)
-t1=np.transpose(m1)
-t2=np.transpose(m2)
+t=np.transpose(mul)
+
 print("--------------------------------")
-print(t1)
-print(t2)
+print(t)
+
 print("--------------------------------")
+
+i=np.linalg.inv(mul)
+print(i)
+
+#Challenge : Sélection Basée sur Conditions
+
+
+Conditions = np.array([10,51,10,3,7,8,12])
+
+seuil = 12
+
+Con_seuil = np.where(Conditions > seuil)
+
+print(Con_seuil)
+
+nouveau_array= Conditions[Con_seuil]
+print(nouveau_array)
