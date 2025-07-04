@@ -20,7 +20,17 @@ print(c2[c])
 
 #Challenge : Opérations Matricielles
 
-m1=np.array([5,10,8,6,3,9,4])
-m2=np.array([7,8,6,7,3,9,2])
+m1=np.array([[5,10],
+             [7,8]])
+m2=np.array([[3,5],
+             [9,4]])
+
 mul=np.dot(m1,m2)
+print("--------------------------------")
 print(mul)
+t1=np.transpose(m1)
+t2=np.transpose(m2)
+print("--------------------------------")
+print(t1)
+print(t2)
+print("--------------------------------")
